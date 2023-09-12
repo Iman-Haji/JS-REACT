@@ -1,0 +1,52 @@
+body {
+  background-color: #9ba3c3;
+}
+
+h1, h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #121626;
+}  
+section {
+    padding: 32px; /*prevents blank spaces.*/
+}
+header {
+    text-align: right; /*telling the browser which side the text sits at*/
+}
+  
+nav ul {
+    list-style-type: none;
+}
+  
+header li {
+    display: inline-block; /*allows all the block items sit next to each other*/
+    color: white; /*colour for our nav*/
+}
+
+  /*header*/
+
+header {
+    background: #443c50;
+    text-align: right; /*telling the browser which side the text sits at*/
+}
+  
+nav ul {
+    list-style-type: none;
+}
+  
+header li {
+    display: inline-block; /*allows all the block items sit next to each other*/
+    color: white; /*colour for our nav*/
+}
+  
+  /*unordered list*/
+  ul li a {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block; /*padding to all sides*/
+  }
+  
+/*when someone hovers or clicks a link */
+li:hover {
+  background-color: #b39979;
+}

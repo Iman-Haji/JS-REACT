@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  background: linear-gradient(160deg,#e68964, #3b4079);  font-family: 'baskerville';
+  text-align: center;
+}
+h1 {
+  color: rgb(74, 51, 13);
+}
+
+#userQuestion {
+  width: 100px;
+  height: 23px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+#checkButton {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(238, 224, 186);
+  font-size: 20px;
+  margin-top: 20px;
+  width: 80px;
+  height: 30px;
+}
+
+#checkButton:hover {
+  background-color:#a8917e;
+  transition: 0.3s;
+}
+
+#askButton {
+  background-color: antiquewhite;
+  color: rgb(49, 10, 17);
+  margin-top: 30px;
+  /*width: 80px;
+  height: 36px;*/
+}
+
+#answer {
+  margin-top: 80px;
+  color: rgb(197, 230, 230);
+}
