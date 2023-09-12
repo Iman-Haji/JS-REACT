@@ -50,3 +50,8 @@ header li {
 li:hover {
   background-color: #b39979;
 }
+
+#pizzaPicture {
+  width: 360px;
+  height: 260px;
+}
