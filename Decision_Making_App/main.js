@@ -9,7 +9,7 @@ function decisionMake() {
   switch (number) {
     case 0:
       text=
-      "Yes, the odds are in your favour."
+      "Yess, the odds are in your favour."
       break;
     case 1:
       text=
