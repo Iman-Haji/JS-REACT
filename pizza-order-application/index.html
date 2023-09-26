@@ -1,44 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizza</title>
-    <!-- <script src="main.js"></script> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Iman Pizzeria</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="build-your-own.html">Build <i>Your Own </i>Pizza</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- For content division we use section. -->
-      <section>
-        <h1>Iman's Pizzeria</h1>
-        <p>Bienvenuti!</p>
-        <img
-          id="pizzaPicture"
-          src="https://scontent-hel3-1.xx.fbcdn.net/v/t39.30808-6/240514027_2084217255061957_2090922961515456459_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=49d041&_nc_ohc=tXtJcB1JAGwAX_xDnqo&_nc_ht=scontent-hel3-1.xx&oh=00_AfAZAVFE7W1auUGcjo7AjKovTwq4KVnO8a1M-ihhlnoKbw&oe=650542C7"
-          alt="Pizza in  Ponte Vecchio, Italy."
-        />
-        <p>
-          Iman's Pizzeria is an Italian family-owned-and-operated business since
-          the late 1980s. With humble beginnings, Iman's Pizzeria climbed its
-          way up, <i>one pizza at a time</i>.<br />
-          We believe each customer has unique and special requests and that is
-          why we specialize in custom-made pizzas. Our focus is on our
-          customers, making sure we're catering to each individual. Whether it's
-          your first time trying Iman's Pizzeria or you're a loyal customer of
-          ours, we warmly welcome you.
-        </p>
-      </section>
-    </main>
-    <link rel="stylesheet" href="stylesheet.css" class="rel" />
-  </body>
+<main>
+  <form>
+    <h1>Order Deliciousness</h1>
+    <p> Welcome to our highly renowed and respected restaurant. Here you can find delicious pizzas coming directly from Italy.</p>
+  <h2>Our Dear Customer Details</h2>
+<div>
+  <label for="name">Your name</label>
+  <input type="text" id="name" />
+</div>
+<h2>Pizza Size</h2>
+<div>
+  <input type="radio" id="size2" name="size" />
+  <label for="size2">for two pizzas: 7.50€</label>
+</div>
+<div>
+  <input type="radio" id="size4" name="size" />
+  <label for="size4">for four pizzas: 10.50€</label>
+</div>
+<div>
+  <input type="radio" id="size6" name="size" />
+  <label for="size6">for six pizzas: 12.50€</label>
+</div>
+<div>
+  <input type="radio" id="size8" name="size" />
+  <label for="size8">for four pizzas: 15.50€</label>
+</div>
+<h2>Pizza Toppings</h2>
+<div>
+  <input type="checkbox" id="tomatoe" name="tomatoe" value="tomatoe" />
+  <label for="tomatoe">Tomatoe</label>
+</div>
+<div>
+  <input type="checkbox" id="pineapple" value="pineapple" />
+  <label for="pineapple">pineapple</label>
+</div>
+<div>
+  <input type="checkbox" id="cheese" value="cheese" />
+  <label for="cheese">Cheese</label>
+</div>
+<div>
+  <input type="checkbox" id="mushrooms" value="mushrooms" />
+  <label for="mushrooms">Mushrooms</label>
+<div>
+    <input type="checkbox" id="chicken" value="chicken" />
+    <label for="chicken">Chicken</label>
+</div>
+<div>
+  <input
+    type="checkbox"
+    id="mediterranean_black_olives"
+    name="mediterranean_black_olives"
+    value="mediterranean_black_olives"
+  />
+  <label for="Mediterranean black olives"
+    >Mediterranean black olives</label
+  >
+</div>
+<div>
+  <input
+    type="checkbox"
+    id="green_olives"
+    name="green_olives"
+    value="green_olives"
+  />
+  <label for="green_olives">Green Olives</label>
+</div>
+<div>
+  <input type="checkbox" id="pepperoni" value="pepperoni" />
+  <label for="pepperoni">Pepperoni</label>
+</div>
+<div>
+  <input
+    type="checkbox"
+    id="jalapeño_peppers"
+    name="jalapeño_peppers"
+    value="jalapeño_peppers"
+  />
+  <label for="jalapeño_peppers">Jalapeño peppers</label>
+<input type="submit" value="Submit" />
+</div>
+<h2>Delivery</h2>
+<select name="deliver" id="delivery">
+    <option value="deliveryPick">
+      Select delivery method:
+    </option>
+    <option value="home">Delivery to home</option>
+    <option value="eat in">Eat in</option>
+    <option value="pickup">Pickup food</option>
+  </select>
+  </form>
+</div>
+</main>
+<script src="main.js"></script>
+</body>
 </html>
