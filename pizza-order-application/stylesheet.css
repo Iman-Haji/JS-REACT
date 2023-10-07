@@ -4,72 +4,66 @@
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #6e7dbb;
   overscroll-behavior: none;
   font-family: 'Cinzel', serif;
   font-family: 'Rajdhani', sans-serif;
+  color: #D6AD60;
+
 }
 
 h1,
 h2 {
-  color: #121626;
+  margin: 1.6rem;
+  font-size: 1rem;
+  color: #ebd3a7;
 }
 
-section {
+main {
+  display: flex;
+  position: relative;
+}
+
+/*section {
   padding: 32px;
-  /*prevents blank spaces.*/
+prevents blank spaces.
+}*/
+
+input,
+select,
+label {
+  padding: 8px;
 }
 
-header {
-  text-align: right;
-  /*telling the browser which side the text sits at*/
+
+.container_left {
+  background: url(https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2881&q=80) no-repeat fixed center;
+  width: 57vw;
+  background-size: cover;
 }
 
-nav ul {
-  list-style-type: none;
+.container_right {
+  padding-left: 7rem;
+  width: 50vw;
 }
 
-header li {
-  display: inline-block;
-  /*allows all the block items sit next to each other*/
-  color: white;
-  /*colour for our nav*/
+.pizzaPrice {
+  background-color: #ebd3a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  box-shadow: 1, 1, 1 rgb(78, 72, 72);
+  border: 2px solid #D6AD60;
+  border-radius: 60%;
+  width: 70px;
+  height: 70px;
+  padding: 3rem;
 }
 
-/*header*/
-
-header {
-  background: #443c50;
-  text-align: right;
-  /*telling the browser which side the text sits at*/
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-header li {
-  display: inline-block;
-  /*allows all the block items sit next to each other*/
-  color: white;
-  /*colour for our nav*/
-}
-
-/*unordered list*/
-ul li a {
-  padding: 20px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  display: block;
-  /*padding to all sides*/
-}
-
-/*when someone hovers or clicks a link */
-li:hover {
-  background-color: #b39979;
-}
-
-#pizzaPicture {
-  width: 360px;
-  height: 260px;
+.pizzaPrice p {
+  background-color: #e2cba1;
+  color: rgb(159, 145, 127);
+  font-size: 2rem;
+  font-weight: 640;
 }
