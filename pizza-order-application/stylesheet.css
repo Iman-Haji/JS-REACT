@@ -6,13 +6,18 @@
 body,
 html {
   overscroll-behavior: none;
+
 }
 
 body {
   font-family: 'Cinzel', serif, 'Rajdhani', sans-serif;
+  background-image: url('https://thumbs.dreamstime.com/z/pieces-different-pizzas-falling-white-background-198977797.jpg?w=576');
+  background-size: cover;
 }
 
-h1 {
+
+h1,
+h2 {
   font-family: 'Rajdhani', sans-serif;
 }
 
@@ -23,16 +28,21 @@ h2 {
   font-family: sans-serif;
 }
 
+p {
+  font-family: 'Archivo Black', sans-serif, 'Rajdhani', sans-serif;
+  font-weight: 900px;
+}
+
 main {
   display: flex;
   min-height: 110vh;
   position: relative;
 }
 
-.left-container-box {
+/*.container-box {
   background: url(https://plus.unsplash.com/premium_photo-1663858367001-6319e4cec7c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80) no-repeat fixed center center/cover;
-  width: 60vw;
-}
+  width: 33vw;
+}*/
 
 .right-container-box {
   padding: 3rem;
@@ -51,19 +61,24 @@ label {
   margin-top: 0.5rem;
 }
 
+.container-box {
+  padding-top: 5px;
+  padding-bottom: 19px;
+}
+
 .price {
   background-color: #D6AD60;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  border-radius: 70%;
-  border: 1px solid #695329;
+  position: absolute;
+  border-radius: 10%;
+  border: 2px solid #695329;
   box-shadow: 2, 2, 2 rgb(179, 210, 75);
-  height: 30px;
-  width: 30px;
-  padding: 4.4rem;
-  top: 20px;
+  height: 10px;
+  width: 10px;
+  padding: 2.8rem;
+  top: 10px;
   left: 10px;
 }
 
@@ -73,84 +88,34 @@ label {
   font-size: 1.9rem;
 }
 
-
-/*
-* {
-  margin: 0;
-  padding: 0;
+.home_delivery {
+  padding-top: 2px;
+  padding-bottom: 19px;
+  font-size: 11px;
 }
 
-html,
-body {
-  background-color: #6e7dbb;
-  overscroll-behavior: none;
+.submit {
+  font-family: 'Times New Roman', Times, serif;
+  width: 20px;
+  height: 300px;
 }
 
-body {
-  font-family: 'Cinzel', serif, 'Rajdhani', sans-serif;
-  color: #D6AD60;
+button {
+  background-color: #D6AD60;
+  color: #191713;
+  width: 120px;
+  height: 60px;
+  margin-top: 30px;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 20px;
+  transition-duration: 0.2s;
+
+
 }
 
-h1,
-h2 {
-  margin: 1.5rem;
-  font-size: 1rem;
-  color: #ebd3a7;
+button:hover {
+  background-color: #8c6f38;
+  color: white;
+  opacity: 0.9;
 }
-
-
-input,
-select,
-label {
-  padding: 8px;
-}
-
-
-main {
-  display: flex;
-  position: relative;
-  min-height: 110vh;
-}
-
-.container_left {
-  background: url(https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2881&q=80) no-repeat fixed center center/cover;
-  width: 57vw;
-}
-
-.container_right {
-  padding-left: 7rem;
-  width: 50vw;
-}
-
-/*section {
-  padding: 32px;
-prevents blank spaces.
-}
-
-label {
-  display: inline-block;
-  font-size: 1rem;
-  margin: 0.3rem;
-}
-
-.price {
-  background-color: #ebd3a7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  box-shadow: 1, 1, 1 rgb(78, 72, 72);
-  border: 2px solid #D6AD60;
-  border-radius: 60%;
-  width: 70px;
-  height: 70px;
-  padding: 3rem;
-}
-
-.price p {
-  background-color: #e2cba1;
-  color: rgb(159, 145, 127);
-  font-size: 2rem;
-  font-weight: 640;
-}
-*/

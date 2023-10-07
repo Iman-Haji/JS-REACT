@@ -7,34 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
-    <title>Pizza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel:wght@400;600&family=Nabla&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <title>Iman's Pizzeria</title>
   </head>
   <body>
     <main>
-      <div class="left-container-box">
+      
+      <!--
+      <div class="container-box">
         <div class="price">
           <p><span id="price">7.50</span>€</p>
-        </div>
+        </div>-->
       </div>
       <div class="right-container-box">
         <form>
           <h1>ORDER FROM US:</h1>
-          <p>
-            Welcome to our highly renowed and respected restaurant. Here you can find delicious pizzas coming directly from Italy.
+          <p> <strong>Welcome to our highly renowed and respected restaurant. Here you can find delicious pizzas coming directly from Italy.
+          </strong>
 
           </p>
           <h2>Our Dear Customer Details</h2>
           <div>
             <label for="name"></label>
-            <input type="text" id="name"  placeholder="Your Name..."/>
+            <input type="text" id="name"  placeholder="*Your Name..." required/>
           </div>
           <div>
             <label for="name"></label>
-            <input type="text" id="name"  placeholder="Your Last Name..."/>
+            <input type="text" id="name"  placeholder="Your Last Name..." />
           </div>
           <div>
-            <label for="name"></label>
-            <input type="text" id="name"  placeholder="Your Number..."/>
+            <label for="number"></label>
+            <input type="text" id="number"  placeholder="*Your Number..." required/>
           </div>
           <h2>Pizza Sizes</h2>
           <div>
@@ -54,6 +60,8 @@
             <label for="size8">For four: 15.50€</label>
           </div>
           <h2>Pizza Toppings</h2>
+          <p>choose any four toppings you like!</p>
+          <p>Extra toppings: 0.50€</p>
           <div>
             <input type="checkbox" id="tomatoe" name="tomatoe" value="tomatoe" />
             <label for="tomatoe">Tomatoe</label>
@@ -115,6 +123,12 @@
             <option value="eat in">Eat in</option>
             <option value="pickup">Pickup food</option>
           </select>
+          <p class="home_delivery">home delivery: 5.00€</p>
+          
+          <p>Your Order Price:</p>
+          <span id="price">0</span><span>€</span>
+
+          <div><button onclick=" ">Order Now!</button></div>
         </form>
       </div>
     </main>
