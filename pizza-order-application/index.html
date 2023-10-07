@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="stylesheet.css">
-  <title>Iman Pizzeria</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <title>Pizza</title>
   </head>
   <body>
-<main>
-  <div class="container_left">
-    <div class="pizzaPrice">
-      <p><span id="pizzaPrice">7.50</span>€</p>
-    </div>
-  </div>
-  <div class="container-right">
-    <form>
-    <h1>
-      Order Deliciousness
-    </h1>
-    <p>
-      Welcome to our highly renowed and respected restaurant. Here you can find delicious pizzas coming directly from Italy.
-    </p>
-    <h2>Our Dear Customer Details</h2>
-<div>
-  <label for="name">
-  <input type="text" id="name" placeholder="Your Name..." />
-</div>
-</label>
-<h2>Pizza Size</h2>
-<div>
-  <input type="radio" id="size2" name="size" />
-  <label for="size2">for two pizzas: 7.50€</label>
-</div>
-<div>
-  <input type="radio" id="size4" name="size" />
-  <label for="size4">for four pizzas: 10.50€</label>
-</div>
-<div>
-  <input type="radio" id="size6" name="size" />
-  <label for="size6">for six pizzas: 12.50€</label>
-</div>
-<div>
-  <input type="radio" id="size8" name="size" />
-  <label for="size8">for four pizzas: 15.50€</label>
-</div>
-<h2>Pizza Toppings</h2>
-<div>
-  <input type="checkbox" id="tomatoe" name="tomatoe" value="tomatoe" />
-  <label for="tomatoe">Tomatoe</label>
-</div>
-<div>
-  <input type="checkbox" id="pineapple" value="pineapple" />
-  <label for="pineapple">pineapple</label>
-</div>
-<div>
-  <input type="checkbox" id="cheese" value="cheese" />
-  <label for="cheese">Cheese</label>
-</div>
-<div>
-  <input type="checkbox" id="mushrooms" value="mushrooms" />
-  <label for="mushrooms">Mushrooms</label>
-<div>
-    <input type="checkbox" id="chicken" value="chicken" />
-    <label for="chicken">Chicken</label>
-</div>
-<div>
-  <input
-    type="checkbox"
-    id="mediterranean_black_olives"
-    name="mediterranean_black_olives"
-    value="mediterranean_black_olives"
-  />
-  <label for="Mediterranean black olives"
-    >Mediterranean black olives</label
-  >
-</div>
-<div>
-  <input
-    type="checkbox"
-    id="green_olives"
-    name="green_olives"
-    value="green_olives"
-  />
-  <label for="green_olives">Green Olives</label>
-</div>
-<div>
-  <input type="checkbox" id="pepperoni" value="pepperoni" />
-  <label for="pepperoni">Pepperoni</label>
-</div>
-<div>
-  <input
-    type="checkbox"
-    id="jalapeño_peppers"
-    name="jalapeño_peppers"
-    value="jalapeño_peppers"
-  />
-  <label for="jalapeño_peppers">Jalapeño peppers</label>
-<input type="submit" value="Submit" />
-</div>
-<h2>Delivery</h2>
-<select name="deliver" id="delivery">
-    <option value="deliveryPick">
-      Select delivery method:
-    </option>
-    <option value="home">Delivery to home</option>
-    <option value="eat in">Eat in</option>
-    <option value="pickup">Pickup food</option>
-  </select>
-  </form>
-</div>
-</main>
-<script src="main.js"></script>
-</body>
+    <main>
+      <div class="left-container-box">
+        <div class="price">
+          <p><span id="price">7.50</span>€</p>
+        </div>
+      </div>
+      <div class="right-container-box">
+        <form>
+          <h1>ORDER FROM US:</h1>
+          <p>
+            Welcome to our highly renowed and respected restaurant. Here you can find delicious pizzas coming directly from Italy.
+
+          </p>
+          <h2>Our Dear Customer Details</h2>
+          <div>
+            <label for="name"></label>
+            <input type="text" id="name"  placeholder="Your Name..."/>
+          </div>
+          <div>
+            <label for="name"></label>
+            <input type="text" id="name"  placeholder="Your Last Name..."/>
+          </div>
+          <div>
+            <label for="name"></label>
+            <input type="text" id="name"  placeholder="Your Number..."/>
+          </div>
+          <h2>Pizza Sizes</h2>
+          <div>
+            <input type="radio" id="size2" name="size" />
+            <label for="size2">For two: 7.50€</label>
+          </div>
+          <div>
+            <input type="radio" id="size4" name="size" />
+            <label for="size4">For four: 10.50€</label>
+          </div>
+          <div>
+            <input type="radio" id="size6" name="size" />
+            <label for="size6">For six: 12.50€</label>
+          </div>
+          <div>
+            <input type="radio" id="size8" name="size" />
+            <label for="size8">For four: 15.50€</label>
+          </div>
+          <h2>Pizza Toppings</h2>
+          <div>
+            <input type="checkbox" id="tomatoe" name="tomatoe" value="tomatoe" />
+            <label for="tomatoe">Tomatoe</label>
+          </div>
+          <div>
+            <input type="checkbox" id="pineapple" value="pineapple" />
+            <label for="pineapple">pineapple</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cheese" value="cheese" />
+            <label for="cheese">Cheese</label>
+          </div>
+          <div>
+            <input type="checkbox" id="mushrooms" value="mushrooms" />
+            <label for="mushrooms">Mushrooms</label>
+          <div>
+              <input type="checkbox" id="chicken" value="chicken" />
+              <label for="chicken">Chicken</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="mediterranean_black_olives"
+              name="mediterranean_black_olives"
+              value="mediterranean_black_olives"
+            />
+            <label for="Mediterranean black olives"
+              >Mediterranean black olives</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="green_olives"
+              name="green_olives"
+              value="green_olives"
+            />
+            <label for="green_olives">Green Olives</label>
+          </div>
+          <div>
+            <input type="checkbox" id="pepperoni" value="pepperoni" />
+            <label for="pepperoni">Pepperoni</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="jalapeño_peppers"
+              name="jalapeño_peppers"
+              value="jalapeño_peppers"
+            />
+            <label for="jalapeño_peppers">Jalapeño peppers</label>
+
+          <h2>Delivery</h2>
+          <select name="deliver" id="delivery">
+            <option value="empty">
+              Select preferred delivery:
+            </option>
+            <option value="home">Delivery to home</option>
+            <option value="eat in">Eat in</option>
+            <option value="pickup">Pickup food</option>
+          </select>
+        </form>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>

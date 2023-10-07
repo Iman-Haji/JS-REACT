@@ -3,31 +3,101 @@
   padding: 0;
 }
 
-body {
-  background-color: #6e7dbb;
+body,
+html {
   overscroll-behavior: none;
-  font-family: 'Cinzel', serif;
-  font-family: 'Rajdhani', sans-serif;
-  color: #D6AD60;
-
 }
 
-h1,
+body {
+  font-family: 'Cinzel', serif, 'Rajdhani', sans-serif;
+}
+
+h1 {
+  font-family: 'Rajdhani', sans-serif;
+}
+
 h2 {
-  margin: 1.6rem;
-  font-size: 1rem;
-  color: #ebd3a7;
+  margin: 1rem 0 0;
+  color: #D6AD60;
+  font-size: 0.8rem;
+  font-family: sans-serif;
 }
 
 main {
   display: flex;
+  min-height: 110vh;
   position: relative;
 }
 
-/*section {
-  padding: 32px;
-prevents blank spaces.
-}*/
+.left-container-box {
+  background: url(https://plus.unsplash.com/premium_photo-1663858367001-6319e4cec7c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80) no-repeat fixed center center/cover;
+  width: 60vw;
+}
+
+.right-container-box {
+  padding: 3rem;
+  width: 60vw;
+}
+
+input,
+label,
+select {
+  padding: 8px;
+}
+
+label {
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.price {
+  background-color: #D6AD60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-radius: 70%;
+  border: 1px solid #695329;
+  box-shadow: 2, 2, 2 rgb(179, 210, 75);
+  height: 30px;
+  width: 30px;
+  padding: 4.4rem;
+  top: 20px;
+  left: 10px;
+}
+
+.price p {
+  color: rgb(255, 251, 201);
+  font-weight: 900;
+  font-size: 1.9rem;
+}
+
+
+/*
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #6e7dbb;
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: 'Cinzel', serif, 'Rajdhani', sans-serif;
+  color: #D6AD60;
+}
+
+h1,
+h2 {
+  margin: 1.5rem;
+  font-size: 1rem;
+  color: #ebd3a7;
+}
+
 
 input,
 select,
@@ -36,10 +106,15 @@ label {
 }
 
 
+main {
+  display: flex;
+  position: relative;
+  min-height: 110vh;
+}
+
 .container_left {
-  background: url(https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2881&q=80) no-repeat fixed center;
+  background: url(https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2881&q=80) no-repeat fixed center center/cover;
   width: 57vw;
-  background-size: cover;
 }
 
 .container_right {
@@ -47,7 +122,18 @@ label {
   width: 50vw;
 }
 
-.pizzaPrice {
+/*section {
+  padding: 32px;
+prevents blank spaces.
+}
+
+label {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.3rem;
+}
+
+.price {
   background-color: #ebd3a7;
   display: flex;
   justify-content: center;
@@ -61,9 +147,10 @@ label {
   padding: 3rem;
 }
 
-.pizzaPrice p {
+.price p {
   background-color: #e2cba1;
   color: rgb(159, 145, 127);
   font-size: 2rem;
   font-weight: 640;
 }
+*/
